@@ -16,18 +16,18 @@ using namespace std;
 int main() {
     int a=5, x, y=2 , z=1;
     
-    for (int i=1;1<7;i++){
+    for (int i=1;i<7;i++){
         x=7-a;
         a--;
-        for (int b=o;b<y;b++){
+        for (int b=0;b<y;b++){
             cout<<z+b;
         }
-        for (int j=o;j<a;j++){
-            cout<<"*"·;
+        for (int j=0;j<=a;j++){
+            cout<<"*";}
             
         y++;
         cout<<"\n";
-        }
+        
         
     }
 
