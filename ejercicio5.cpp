@@ -23,6 +23,32 @@
 using namespace std;
 
 int main() {
-    float a, b, c, delta, x1, x2;
+    float a, b, c, delta, x, y;
+    cout<<""
+    cin>>a>>b>>c;
+ 
+    delta=pow(b,2)-4*a*c;
+    if (delta>0){
+     x=-b+(sqrt(delta))/(2*a);
+    y=-b-(sqrt(delta))/(2*a);
+  }
+  if (a==0 and b==0)
+    cout<<"No tiene solucion";
+  else 
+    if(a==0)
+      cout<<-c/b;
+    else 
+      if (delta<0)
+        cout<<"No tiene solucion";
+      else
+        cout<<"La ecuacion tiene solucion";
+    
+  return 0;
+ 
+ 
 
 }
+ 
+ 
+ 
+
