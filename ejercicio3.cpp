@@ -1,11 +1,28 @@
 
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
+
+
 int mediana(vector<int> &lista);
 vector<int> leerConsola();
 
 vector<int> leerConsola() {
     //Ingrese un numero positivo, escriba -1 si ya no quiere ingresar mas numeros:
+   vector<int> leerConsola() {
+   vector<int> lista;
+   int num;
+   while (true) {
+      cout<<"Ingrese un numero positivo, escriba -1 si ya no quiere ingresar mas numeros: ";
+      cin>>num;
+      if (num<0) {
+         break;
+      }
+      lista.push_back(num);
+   }
+   return lista;
 }
-
 int mediana(vector<int> &lista) {
     /*
     Si el vector es 3, 9, 11, 15
